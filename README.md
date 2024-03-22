@@ -1,2 +1,2 @@
 # meu portifolio
- Projeo do meu primeiro portifólio
+ Projeto do meu primeiro portifólio
