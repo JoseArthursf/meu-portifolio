@@ -32,6 +32,17 @@ body{
     transition: 0.2s;
 }
 
+h2.titulo {
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+
+}
+
+h2.titulo span{
+    color: #00FF08;
+}
+
 /* ESTILO DO CABEÇALHO */
 header{
     padding: 40px 4%;
@@ -110,4 +121,36 @@ section.topo-do-site .flex{
     100%{
         top: 30px;
     }
+}
+
+/* ESTILOS DAS ESPECIALIDADES */
+
+section.especialidades{
+    padding: 40px 4%;
+}
+
+.especialidades .especialidades-box{
+    color: #fff;
+    padding: 40px;
+    margin-top: 45px;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+.especialidades .especialidades-box i{
+    font-size: 75px;
+    color: #00FF08;
+}
+
+.especialidades .especialidades-box h3{
+    font-size: 28px;
+    margin: 15px 0px;
+}
+
+.especialidades .especialidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0  0 8px #ffffff4d;
+}
+
+section.especialidades .flex{
+    gap: 60px;
 }
