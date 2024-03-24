@@ -13,6 +13,9 @@
     <!--FIM BOOTSTRAP ICONS-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
+
+    <script src="menu.js" defer></script>
+
     <title>Portfólio Arthur</title>
 </head>
 <body>
@@ -20,28 +23,53 @@
     <header>
         <div class="interface">
             <div class="logo">
-                <a href="#">
+                <a href="#ini">
                     <img src="imagens/logo-preta-p.png" alt="Logotipo" width="100px">
                 </a>
             </div> <!-- Logo -->
             <nav class="menu-desktop">
                 <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Especialidades</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Projetos</a></li>
+                    <li><a href="#ini">Início</a></li>
+                    <li><a href="#esp">Especialidades</a></li>
+                    <li><a href="#sob">Sobre</a></li>
+                    <li><a href="#proj">Projetos</a></li>
                 </ul>
             </nav> <!-- Nav -->
             <div class="btn-contato">
-                <a href="#">
+                <a href="https://www.instagram.com/josearthur.sf/" target="_blank" rel="next"">
                     <button>Contato</button>
                 </a>
             </div> <!--Btn Contato-->
+
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-three-dots-vertical"></i>
+            </div> <!--BNT ABRIR MENU-->
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-circle"></i>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="#ini">Início</a></li>
+                        <li><a href="#esp">Especialidades</a></li>
+                        <li><a href="#sob">Sobre</a></li>
+                        <li><a href="#proj">Projetos</a></li>
+                        <li><a href="#cont">Contato</a></li>
+                    </ul>
+                </nav> <!-- Nav mobile -->
+
+            </div><!--menu-mobile-->
+
+            <div class="overlay-menu" id="overlay-menu">
+            </div><!--overlay menu-->
+
         </div> <!-- Interface -->
     </header>
 
     <main>
-        <section class="topo-do-site">
+        <section class="topo-do-site" id="ini">
             <div class="interface">
                 <div class="flex">
                     <div class="txt-topo-site">
@@ -51,7 +79,7 @@
                         </p>
 
                         <div class="btn-contato">
-                            <a href="#">
+                            <a href="https://www.instagram.com/josearthur.sf/" target="_blank" rel="next">
                                 <button>Entre em contato</button>
                             </a>
                         </div>
@@ -64,7 +92,7 @@
             </div> <!-- Interface -->
         </section> <!-- topo-do-site -->
         
-        <section class="especialidades">
+        <section class="especialidades" id="esp">
             <div class="interface">
                 <h2 class="titulo">MINHAS <span>ESPECIALIDADES.</span></h2>
                 <div class="flex">
@@ -87,7 +115,7 @@
             </div><!--Interface-->
         </section> <!--Especialidades-->
     
-        <section class="sobre">
+        <section class="sobre" id="sob">
             <div data-aos="fade-up" class="interface">
                 <div class="flex">
                     <div class="img-sobre">
@@ -95,8 +123,8 @@
                     </div><!--Img Sobre-->
                     <div class="txt-sobre">
                         <h2>MUITO PRAZER, <span>SOU JOSÉ ARTHUR.</span></h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque impedit consequuntur incidunt nam ipsam harum quo ullam! Odio sit nobis officiis accusamus inventore deserunt, laboriosam itaque, impedit necessitatibus dolor veniam.</p>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta facere minima ut fuga deserunt enim amet eius, consequatur rerum. Aliquid necessitatibus autem magnam expedita rem animi distinctio consequuntur illum soluta!</p>
+                        <p>Olá me chamo José Arthur Siqueira França, tenho 20 anos, meu primeiro contato com programação foi (.lua) em 2019, desenvolvendo e editando scripts para um jogo. Em 2022 inicei a faculdade de Análise e Desenvolvimento de Sistemas e conheci o HTML5 e CSS3, me identifiquei bastante com a área e decidir me profissionalizar.</p>
+                        <p>Hoje já entendo tecnologias voltadas para o front-end. E pretendo aprender cada vez mais, tendo sempre em mente que sempre precisamos cada vez mais de aprendizado!</p>
                         <div class="btn-social">
                             <a href="#"><button>
                                 <i class="bi bi-instagram"></i>
@@ -113,7 +141,7 @@
             </div> <!--Interface-->
         </section> <!--SOBRE-->
 
-        <section class="portfolio">
+        <section class="portfolio" id="proj">
             <div data-aos="fade-up" class="interface">
                 <h2 class="titulo">MEU <span>PORTFÓLIO.</span></h2>
                 <div class="flex">
@@ -138,7 +166,7 @@
     </main> <!-- Main -->
 
     <footer>
-        <div class="interface">
+        <div class="interface" id="cont">
             <div class="line-footer">
                 <div class="flex">
                 <div class="logo-footer">
